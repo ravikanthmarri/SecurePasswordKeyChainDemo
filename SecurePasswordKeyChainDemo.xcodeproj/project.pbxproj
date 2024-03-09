@@ -11,7 +11,19 @@
 		3D64A42E2B9C75C900F86AB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64A42D2B9C75C900F86AB3 /* ContentView.swift */; };
 		3D64A4302B9C75CA00F86AB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D64A42F2B9C75CA00F86AB3 /* Assets.xcassets */; };
 		3D64A4332B9C75CA00F86AB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D64A4322B9C75CA00F86AB3 /* Preview Assets.xcassets */; };
+		3D64A4402B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64A43F2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.swift */; };
+		3D64A4472B9C764E00F86AB3 /* SecurityWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D64A4462B9C764E00F86AB3 /* SecurityWrapper.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D64A4412B9C75DF00F86AB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D64A4202B9C75C900F86AB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D64A4272B9C75C900F86AB3;
+			remoteInfo = SecurePasswordKeyChainDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3D64A4282B9C75C900F86AB3 /* SecurePasswordKeyChainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurePasswordKeyChainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +31,20 @@
 		3D64A42D2B9C75C900F86AB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D64A42F2B9C75CA00F86AB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D64A4322B9C75CA00F86AB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D64A43D2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecurePasswordKeyChainDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D64A43F2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePasswordKeyChainDemoTests.swift; sourceTree = "<group>"; };
+		3D64A4462B9C764E00F86AB3 /* SecurityWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D64A4252B9C75C900F86AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D64A43A2B9C75DF00F86AB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				3D64A42A2B9C75C900F86AB3 /* SecurePasswordKeyChainDemo */,
+				3D64A43E2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests */,
 				3D64A4292B9C75C900F86AB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3D64A4282B9C75C900F86AB3 /* SecurePasswordKeyChainDemo.app */,
+				3D64A43D2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +77,7 @@
 			children = (
 				3D64A42B2B9C75C900F86AB3 /* SecurePasswordKeyChainDemoApp.swift */,
 				3D64A42D2B9C75C900F86AB3 /* ContentView.swift */,
+				3D64A4462B9C764E00F86AB3 /* SecurityWrapper.swift */,
 				3D64A42F2B9C75CA00F86AB3 /* Assets.xcassets */,
 				3D64A4312B9C75CA00F86AB3 /* Preview Content */,
 			);
@@ -65,6 +90,14 @@
 				3D64A4322B9C75CA00F86AB3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D64A43E2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D64A43F2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.swift */,
+			);
+			path = SecurePasswordKeyChainDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = 3D64A4282B9C75C900F86AB3 /* SecurePasswordKeyChainDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3D64A43C2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D64A4432B9C75DF00F86AB3 /* Build configuration list for PBXNativeTarget "SecurePasswordKeyChainDemoTests" */;
+			buildPhases = (
+				3D64A4392B9C75DF00F86AB3 /* Sources */,
+				3D64A43A2B9C75DF00F86AB3 /* Frameworks */,
+				3D64A43B2B9C75DF00F86AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D64A4422B9C75DF00F86AB3 /* PBXTargetDependency */,
+			);
+			name = SecurePasswordKeyChainDemoTests;
+			productName = SecurePasswordKeyChainDemoTests;
+			productReference = 3D64A43D2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					3D64A4272B9C75C900F86AB3 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					3D64A43C2B9C75DF00F86AB3 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 3D64A4272B9C75C900F86AB3;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				3D64A4272B9C75C900F86AB3 /* SecurePasswordKeyChainDemo */,
+				3D64A43C2B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +186,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D64A43B2B9C75DF00F86AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,11 +201,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D64A42E2B9C75C900F86AB3 /* ContentView.swift in Sources */,
+				3D64A4472B9C764E00F86AB3 /* SecurityWrapper.swift in Sources */,
 				3D64A42C2B9C75C900F86AB3 /* SecurePasswordKeyChainDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D64A4392B9C75DF00F86AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D64A4402B9C75DF00F86AB3 /* SecurePasswordKeyChainDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D64A4422B9C75DF00F86AB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D64A4272B9C75C900F86AB3 /* SecurePasswordKeyChainDemo */;
+			targetProxy = 3D64A4412B9C75DF00F86AB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3D64A4342B9C75CA00F86AB3 /* Debug */ = {
@@ -322,6 +402,42 @@
 			};
 			name = Release;
 		};
+		3D64A4442B9C75DF00F86AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9V8ERLS88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.ravikanth.SecurePasswordKeyChainDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecurePasswordKeyChainDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecurePasswordKeyChainDemo";
+			};
+			name = Debug;
+		};
+		3D64A4452B9C75DF00F86AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K9V8ERLS88;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = self.ravikanth.SecurePasswordKeyChainDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecurePasswordKeyChainDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecurePasswordKeyChainDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +455,15 @@
 			buildConfigurations = (
 				3D64A4372B9C75CA00F86AB3 /* Debug */,
 				3D64A4382B9C75CA00F86AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D64A4432B9C75DF00F86AB3 /* Build configuration list for PBXNativeTarget "SecurePasswordKeyChainDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D64A4442B9C75DF00F86AB3 /* Debug */,
+				3D64A4452B9C75DF00F86AB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
